@@ -13,7 +13,7 @@ body {
   font-family: Roboto, Arial;
   color: white;
   font-size: 16px;
-  background: linear-gradient( #ffdab9, #B8FFD4);
+  background: linear-gradient( #ffbb80, #80FFB3);
 }
 
 h1 {
@@ -56,7 +56,7 @@ img {
 }
 
 .header {
-  background-color: #FFB8F1;
+  background-color: #ff80e5;
   width: 60%;
   margin: 0 auto;
   display: flex;
@@ -85,7 +85,7 @@ img {
 }
 
 .blog-header span {
-  background-color: #FFB8F1;
+  background-color: #ff80e5;
   color: #ffffff;
   padding: 10px;
   width: 100%;
@@ -103,7 +103,7 @@ img {
 }
 
 .box-big {
-  background-color: #FFB8F1;
+  background-color: #ff80e5;
   height: 400px;
   box-shadow: 2px 2px 5px #523a4d;
   border-radius: 5px;
@@ -125,17 +125,10 @@ img {
 }
 
 .box-small {
-  background-color: #FFB8F1;
+  background-color: #ff80e5;
   height: 195px;
   box-shadow: 2px 2px 5px #523a4d;
   border-radius: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  .col {
-    flex: 100%;
-    margin: 10px 0;
-  }
 }
 
 .shape-row {
@@ -150,19 +143,50 @@ img {
 }
 
 .shape {
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
   border-radius: 25%;
   background-color: #B8E1FF;
-  animation: rotate 3s infinite linear;
-  background: linear-gradient( #B8E1FF, #B8FFD4)
+  animation: rotate-color 10s infinite linear;
+  
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+  @keyframes rotate-color {
+    0% {
+      transform: rotate(0deg);
+      background-color: #FFBB80;
+    }
+    33% {
+      transform: rotate(360deg);
+      background-color: #80CCFF;
+    }
+    66% {
+      transform: rotate(720deg);
+      background-color: #FF80E5;
+    }
+    100% {
+      transform: rotate(1080deg);
+      background-color: #FFBB80;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+width: 80%;
   }
-  100% {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 1100px) {
+  .blog-header {
+width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .box-grid-1 {
+width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .box-grid-2 {
+width: 80%;
   }
 }
