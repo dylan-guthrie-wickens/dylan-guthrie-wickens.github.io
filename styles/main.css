@@ -10,10 +10,14 @@ html, body {
 }
 
 body {
+  margin-top: 30px;
   font-family: Roboto, Arial;
   color: white;
   font-size: 16px;
   background: linear-gradient( #ffbb80, #80FFB3);
+  height: auto;
+  min-height: 100%;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -33,9 +37,13 @@ h3 {
   font-family: "Press Start 2P";
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
+  padding: 10px 0;
 }
 
+p {
+  padding: 20px;
+  text-align: justify;
+}
 a {
   color: #ffffff;
   text-decoration: none;
@@ -51,12 +59,9 @@ img {
 }
 
 .header {
+  background-color: #ff80e5;
   box-shadow: 2px 2px 5px #523a4d;
   border-radius: 5px;
-}
-
-.header {
-  background-color: #ff80e5;
   width: 60%;
   margin: 0 auto;
   display: flex;
@@ -94,6 +99,33 @@ img {
   border-radius: 5px;
 }
 
+.blog-header h3 {
+  background-color: #ff80e5;
+  color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 2px 2px 5px #523a4d;
+  border-radius: 5px;
+}
+
+.blog-sub-header {
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+}
+
+.blog-sub-header span {
+  background-color: #ff80e5;
+  color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 2px 2px 5px #523a4d;
+  border-radius: 5px;
+}
+
+
 .box-grid-1 {
   width: 60%;
   margin: 10px auto;
@@ -103,6 +135,15 @@ img {
 }
 
 .box-big {
+  background-color: #ff80e5;
+  height: 400px;
+  box-shadow: 2px 2px 5px #523a4d;
+  border-radius: 5px;
+}
+
+.box-page {
+  width: 60%;
+  margin: 10px auto;
   background-color: #ff80e5;
   height: 400px;
   box-shadow: 2px 2px 5px #523a4d;
@@ -151,23 +192,23 @@ img {
   
 }
 
-  @keyframes rotate-color {
-    0% {
-      transform: rotate(0deg);
-      background-color: #FFBB80;
-    }
-    33% {
-      transform: rotate(360deg);
-      background-color: #80CCFF;
-    }
-    66% {
-      transform: rotate(720deg);
-      background-color: #FF80E5;
-    }
-    100% {
-      transform: rotate(1080deg);
-      background-color: #FFBB80;
-    }
+@keyframes rotate-color {
+  0% {
+    transform: rotate(0deg);
+    background-color: #FFBB80;
+  }
+  33% {
+    transform: rotate(360deg);
+    background-color: #80CCFF;
+  }
+  66% {
+    transform: rotate(720deg);
+    background-color: #FF80E5;
+  }
+  100% {
+    transform: rotate(1080deg);
+    background-color: #FFBB80;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -175,18 +216,33 @@ img {
 width: 80%;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .blog-header {
 width: 80%;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .box-grid-1 {
 width: 80%;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .box-grid-2 {
+width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .blog-sub-header {
+width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .box-page {
 width: 80%;
   }
 }
