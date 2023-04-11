@@ -110,19 +110,19 @@ a:hover {
 }
 
 .blog-header {
+  background-color: #ff80e5;
+  box-shadow: 2px 2px 5px #523a4d;
+  border-radius: 5px;
   width: 60%;
   margin: 10px auto;
   display: flex;
 }
 
-.blog-header span {
-  background-color: #ff80e5;
+span {
   color: #ffffff;
-  padding: 10px;
+  display: inline-block;
   width: 100%;
   text-align: center;
-  box-shadow: 2px 2px 5px #523a4d;
-  border-radius: 5px;
 }
 
 .blog-header h3 {
