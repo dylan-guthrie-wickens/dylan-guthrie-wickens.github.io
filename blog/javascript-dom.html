@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--meta tags, fonts, stylesheet-->
+<head>
+  <title>Fundamentally JavaScript</title>
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <!--title and nav-->
+  <header class="header">
+    <nav class="navbar">
+      <div class="navigation">
+        <ul class="nav-list">
+          <li class="list-item">
+            <h3><a href="../index.html" class="list-link">Home</a></h3>
+          </li>
+          <li class="list-item">
+            <h3><a href="./tech.html" class="list-link">Tech</a></h3>
+          </li>
+          <li class="list-item">
+            <h3><a href="./core.html" class="list-link">Core</a></h3>
+          </li>
+        </ul>
+      </div>
+  </header>
+  <!--background-->
+  <div class="background">
+  </div>
+  <!--main content-->
+  <section id="page-content">
+  <div class="blog-header">
+    <h3>Fundamentally JavaScript</h3>
+  </div>
+  <div class="blog-sub-header">
+    <span>Ever wanted to learn about the most popular programming language in the world? Well now you can!</span>    
+  </div>
+  <!--BOXES-->
+    <div class="box-page">
+      <div class="box-text">
+        <h4>Building a website you can live in</h4>
+        <p>
+          So you want to build a house, that is a metaphor for a website (we will pretend for this exercise that we live in a country where that is financially feasible). First you will need your plan and framing, this would be your HTML. HTML tells the computer what elements you have, and where they go (your DIV rooms, your < a href> doors, etc).
+        </p>
+        <p>Next comes the decoration (a little backwards maybe, but hey, this is your house, your rules). This is your CSS paint, wallpaper, furniture, all that fun stuff.
+        </p>
+        <p>
+          But wait! You need to do the electrical wiring, the plumbing, all the backend stuff that makes things actually work! Well my friend, luckily you can us JavaScript (JS) for that!
+        </p>
+        <h4>Controlling your flow, and looping your life
+        </h4>
+        <p>
+          When following instructions, you are likely to follow them in order (I say likely, you might be one of those maverick types who doesn't read instructions). In the same way, your computer is going to read the instructions given to it in a particular order. We call this the control flow, and this can make big differences in the behavior of your programs.
+        </p>
+        <pre>
+          <code>
+  console.log("Get instant noodle packet from cupboard");
+  console.log("Boil water in pot");
+  console.log("Add noodles from packet to pot");
+  console.log("Drain water once noodles are cooked");
+  console.log("Add flavouring sachets and mix");
+  console.log("Eat noodles straight from pot because you have lost control of your life");
+          </code>
+        </pre>
+        <p>
+          This code will execute each instruction in a particular order. In this example's case, the order will be going down in the order you read them, but that's not always true, so watch out!
+        </p>
+        <p>
+          Now, you have found yourself in a strange situation, you now all of a sudden own an instant noodle food truck! You will need to keep making instant noodles for people, but you don't want to copy and paste this code over and over again, so instead you decide to use a loop!
+        </p>
+        <pre>
+          <code>
+  for (let i = 1; i <= 5; i++) {
+    console.log("Get instant noodle packet from cupboard");
+    console.log("Boil water in pot");
+    console.log("Add noodles from packet to pot");
+    console.log("Drain water once noodles are cooked");
+    console.log("Add flavouring sachets and mix");
+    console.log("Serve noodles to customer");
+  }
+          </code>
+        </pre>
+        <p>
+          This is a basic loop that will execute these instructions a set number of times (the bottom instruction isn't need now, you have a small business, you have gained control of your life). It works thusly:
+        </p>
+        <ul>
+          <li>'for' indicates that this is a 'for' loop type. There are two other types, such as 'while' loops, that will repeat something as long as a certain condition is 'true', and a 'do…while' loop, which is similar to the 'do' loop, but checks the 'condition is true' part every time the loop runs.</li>
+          <li>The part in the () brackets is the loop declaration. It has three parts, separated by a semicolon</li>
+          <li>'let i = 1' starts the loop with a variable 'i' that has the value of '1'</li>
+          <li>'i <= 5' is the condition for continuing the loop. The loop will continue while 'i' is less</li>
+          <li>'i++' is the increment statement, every loop this means the value of 'i' will go up by one, until it reaches the value set by the loop condition, in this case 5</li>
+          <li>The loop code block is contained in the {} curly brackets. This can be pretty much anything, making loops a super powerful tool in your mass production of instant noodles!</li>
+        </ul>
+        <h4>You and your DOM
+        </h4>
+        <p>DOM stands for Document Object Model (not the other thing, you weirdo). The DOM is the interface programmers use for interacting with and manipulating web documents with JS (or other languages). With the DOM, programmers can navigate the document (HTML in our case) and add, delete, or modify content and elements, to add interactivity, update information,  and other cool effects to the website. Sounds pretty abstract and brain bending (because it is), but let's demonstrate with examples!
+        </p>
+        <p>This code in the HTML document tells the webpage there is a button here:</p>
+        <pre>
+          <code>
+  &lt;button class="my-button">Click me&lt;/button>
+          </code>
+        </pre>
+        <p>Very basic styling of the button in CSS:</p>
+        <pre>
+          <code>
+              .my-button {
+                background-color: blue;
+                color: white;
+              }
+          </code>
+        </pre>
+        <p>This JS adds the actual functionality, or the button wouldn't do anything. This code creates an "alert" at the top of the page, that says 'Hello World!'
+        </p>
+        <pre>
+          <code>
+  document.getElementById('buttonClass').onclick = function () {
+    alert('Hello World!');
+  };
+          </code>
+        </pre>
+        <p>Wouldn't be any fun without the actual button!</p>
+        <button class="my-button">Click me</button>
+        <p>What we have done here is add code to the button that interacts with the DOM via dot notation. Specifically the 'getElementById' method is applied to the 'document' object (the HTML page), allowing us to 'select' the element that has the ide 'buttonClass' (the button on the page). 'onclick' then accesses the 'onclick' (which is an 'event handler') property of the HTML element we have selected. This will then trigger the function after it, running the code block in the function, saying hello to the world!
+        </p>
+        <p>Another way to think of the DOM is with a tree, with branching points being nodes, or HTML tags. The Document Object Model sees every HTML tag as an object, with nesting tags being treated as the child of the ones they are enclosed by. The contents of these tags, what is between them, is also an object to the DOM.
+        </p>
+        <p>This HTML here can be represented as the DOM tree below it:
+        </p>
+        <pre>
+          <code>
+            &lt;!DOCTYPE html>
+            &lt;html>
+                &lt;body>
+                    &lt;h1>HEADING&lt;/h>
+                    &lt;p id="paragraph">&lt;em>content&lt;/em>&lt;/p>
+                &lt;/body>
+            &lt;/html>
+          </code>
+        </pre>
+        <img src="./dom-tree-fig.png" alt="an example of a simple DOM tree" class="page-image">
+        <h4>The Object and Array Data Store</h4>
+        <p>Ok so, we have a shop. Not just any old shop, this one sells data! But we have to store the data, in our shop, otherwise how will we access it to sell? This is where objects and arrays come in!
+        </p>
+        <p>Arrays are collections of values that are stored in a particular order (almost like a list). Each value in an array is assigned a number, or index, starting at 0 (not 1) for the first value. An array can look, and be accessed, like the example below:</p>
+        <pre>
+          <code>
+  const yourSocialMediaAccount = ['Your passwords', 'Your browsing habits', 'Your personal info'];
+  console.log(myArray[1]);
+  --// Output: 'Your browsing habits' //--
+          </code>
+        </pre>
+        <p>In this array we have some data to sell (we are a social media company), and we need to output one of the values from the array. In this example, the second value is outputted, as we have logged yourSocialMediaAccount[1].
+        </p>
+        <p>But we want to store some specific data types together, so that we can access particular values that are related. So let's use an object, as below:
+        </p>
+        <pre>
+          <code>
+  const yourPersonalInfo = {
+    name: 'John Smith',
+    age: 35,
+    occupation: 'Entrepreneur'
+  };
+  console.log(yourPersonalInfo.age);
+  --// Output: 35 //--
+          </code>
+        </pre>
+        <p>In this object, we have 'key: value' pairs. The 'key' part is the first part, eg 'age', and the value is assigned to the key, eg '35'. We can then access it via dot notation as in the code example above (object.key returns the value).
+        </p>
+        <h4>How to Function</h4>
+        <p>Last but no least, we have functions (no not like parties, don't be silly). A function is essentially a discrete code block, that can be used as many times as needed to produce an output. So instead of rewriting the same code every time you need part of your code to produce something, you can instead call the appropriate function you have already created! Planning makes functions successful (no not parties, stop asking).
+        </p>
+        <p>The function is named first eg 'functionTime', and given an parameter if needed. The code block inside the {} curly brackets is the then executed when the function is called. Here is a simple function example, that reminds us of a very important thing:
+        </p>
+        <pre>
+          <code>
+  function partyTime() {
+    console.log('It's time to party!');
+  }
+          </code>
+        </pre>
+        <p>We will need to use this very often, so instead of repeating this through our code, we can just call it at the appropriate times like so:
+        </p>
+        <pre>
+          <code>
+  partyTime();
+          </code>
+        </pre>
+        <p>Functions also accept parameters, which then can be passed into the function body for whatever you need, like so:
+        </p>
+        <pre>
+          <code>
+  function boogieTime(name) {
+    console.log('Stop eating those noodles out of the pot ${name}! It's time to boogie!');
+  }
+  
+  boogieTime('you loser ');
+  --// Output 'Stop eating those noodle out of the pot you loser! It's time to boogie!' //--
+          </code>
+        </pre>
+        <p>Functions mean you don't have to rely on hard coding inputs as often, or having magic numbers floating all over that you will forget to change when it's important, making your code a lot more flexible. Functions are ESSENTIAL to keeping your code tidy and easy to read, and easy to maintain for the poor person who has to work on it after you.
+        </p>
+      </div>
+    </div>
+  <div class="box-grid-2">
+    <div class="box-small">
+      
+      <div class="box-text">
+        <h4><br><br>Future content will go here</h4>
+      </div>
+    </div>
+    <div class="box-small">
+      
+      <div class="box-text">
+        <h4><br><br>Future content will go here</h4>
+      </div>
+    </div>
+    <div class="box-small">
+      
+      <div class="box-text">
+        <h4><br><br>Future content will go here</h4>
+      </div>
+    </div>
+  </div>
+  <div class="animation">
+    <div class="shape-row">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+  </div>
+</body>
+</html>
+</html>

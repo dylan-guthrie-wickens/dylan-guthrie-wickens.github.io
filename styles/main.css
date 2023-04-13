@@ -66,6 +66,11 @@ a:hover {
   text-decoration: underline;
 }
 
+pre {
+  margin: 0 20px;
+  background-color: #80CCFF;
+  overflow: scroll;
+}
 .page-image {
   display: flex;
   margin: 0 auto;
