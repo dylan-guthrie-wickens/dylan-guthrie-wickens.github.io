@@ -57,6 +57,13 @@ p {
   text-align: justify;
 }
 
+ul {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: justify;
+  width: 80%;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -66,8 +73,20 @@ a:hover {
   text-decoration: underline;
 }
 
+.buttonClass {
+  background-color: #80CCFF;
+  box-shadow: 2px 2px 5px #523a4d;
+  color: white;
+  margin: 15px 25%;
+  border: none;
+  width: 50%;
+  height: 50px;
+}
+
 pre {
   margin: 0 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #523a4d;
   background-color: #80CCFF;
   overflow: scroll;
 }
@@ -125,7 +144,7 @@ pre {
 
 span {
   color: #ffffff;
-  display: inline-block;
+  margin: 10px auto;
   width: 100%;
   text-align: center;
 }
@@ -133,27 +152,25 @@ span {
 .blog-header h3 {
   background-color: #ff80e5;
   color: #ffffff;
-  padding: 10px;
+  margin: 10px;
   width: 100%;
   text-align: center;
-  box-shadow: 2px 2px 5px #523a4d;
   border-radius: 5px;
 }
 
 .blog-sub-header {
+  background-color: #ff80e5;
   width: 60%;
   margin: 0px auto;
   display: flex;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #523a4d;
 }
 
 .blog-sub-header span {
-  background-color: #ff80e5;
   color: #ffffff;
-  padding: 10px;
   width: 100%;
   text-align: center;
-  box-shadow: 2px 2px 5px #523a4d;
-  border-radius: 5px;
 }
 
 
@@ -174,7 +191,7 @@ span {
 
 .box-page {
   width: 60%;
-  margin: 10px auto;
+  margin:10px auto;
   background-color: #ff80e5;
   height: auto;
   box-shadow: 2px 2px 5px #523a4d;

@@ -49,11 +49,14 @@
         <p>
           So you want to build a house, that is a metaphor for a website (we will pretend for this exercise that we live in a country where that is financially feasible). First you will need your plan and framing, this would be your HTML. HTML tells the computer what elements you have, and where they go (your DIV rooms, your < a href> doors, etc).
         </p>
+        <img src="./html-house-plan.png" alt="3d house model with 2d plans for house next to it" class="page-image">
         <p>Next comes the decoration (a little backwards maybe, but hey, this is your house, your rules). This is your CSS paint, wallpaper, furniture, all that fun stuff.
         </p>
+        <img src="./css-interior-design.png" alt="interior design plan" class="page-image">
         <p>
-          But wait! You need to do the electrical wiring, the plumbing, all the backend stuff that makes things actually work! Well my friend, luckily you can us JavaScript (JS) for that!
+          But wait! You need to do the electrical wiring, the plumbing, all the backend stuff that makes things actually work! Well my friend, luckily you can use JavaScript (JS) for that!
         </p>
+        <img src="./js-plumbing-plan.png" alt="3d plan showing plumbing and electrical for new house" class="page-image">
         <h4>Controlling your flow, and looping your life
         </h4>
         <p>
@@ -92,10 +95,10 @@
         </p>
         <ul>
           <li>'for' indicates that this is a 'for' loop type. There are two other types, such as 'while' loops, that will repeat something as long as a certain condition is 'true', and a 'do…while' loop, which is similar to the 'do' loop, but checks the 'condition is true' part every time the loop runs.</li>
-          <li>The part in the () brackets is the loop declaration. It has three parts, separated by a semicolon</li>
-          <li>'let i = 1' starts the loop with a variable 'i' that has the value of '1'</li>
-          <li>'i <= 5' is the condition for continuing the loop. The loop will continue while 'i' is less</li>
-          <li>'i++' is the increment statement, every loop this means the value of 'i' will go up by one, until it reaches the value set by the loop condition, in this case 5</li>
+          <li>The part in the () brackets is the loop declaration. It has three parts, separated by a semicolon.</li>
+          <li>'let i = 1' starts the loop with a variable 'i' that has the value of '1'.</li>
+          <li>'i <= 5' is the condition for continuing the loop. The loop will continue while 'i' is less than or equal to 5.</li>
+          <li>'i++' is the increment statement, every loop this means the value of 'i' will go up by one, until it reaches the value set by the loop condition, in this case 5.</li>
           <li>The loop code block is contained in the {} curly brackets. This can be pretty much anything, making loops a super powerful tool in your mass production of instant noodles!</li>
         </ul>
         <h4>You and your DOM
@@ -105,30 +108,36 @@
         <p>This code in the HTML document tells the webpage there is a button here:</p>
         <pre>
           <code>
-  &lt;button class="my-button">Click me&lt;/button>
+  &lt;button class="buttonClass "id="buttonId">Click me&lt;/button>
           </code>
         </pre>
-        <p>Very basic styling of the button in CSS:</p>
+        <p>Styling of the button in CSS (gotta have a stylish button):</p>
         <pre>
           <code>
-              .my-button {
-                background-color: blue;
-                color: white;
-              }
+  .buttonClass {
+    background-color: #80CCFF;
+    box-shadow: 2px 2px 5px #523a4d;
+    color: white;
+    margin: 15px 25%;
+    border: none;
+    width: 50%;
+    height: 50px;
+  }
           </code>
         </pre>
         <p>This JS adds the actual functionality, or the button wouldn't do anything. This code creates an "alert" at the top of the page, that says 'Hello World!'
         </p>
         <pre>
           <code>
-  document.getElementById('buttonClass').onclick = function () {
+  document.getElementById('buttonId').onclick = function () {
     alert('Hello World!');
+    return
   };
           </code>
         </pre>
         <p>Wouldn't be any fun without the actual button!</p>
-        <button class="my-button">Click me</button>
-        <p>What we have done here is add code to the button that interacts with the DOM via dot notation. Specifically the 'getElementById' method is applied to the 'document' object (the HTML page), allowing us to 'select' the element that has the ide 'buttonClass' (the button on the page). 'onclick' then accesses the 'onclick' (which is an 'event handler') property of the HTML element we have selected. This will then trigger the function after it, running the code block in the function, saying hello to the world!
+        <button class="buttonClass" id="buttonId">Click me</button>
+        <p>What we have done here is add code to the button that interacts with the DOM via dot notation. Specifically the 'getElementById' method is applied to the 'document' object (the HTML page), allowing us to 'select' the element that has the id 'buttonId' (the button on the page). 'onclick' then accesses the 'onclick' (which is an 'event handler') property of the HTML element we have selected. This will then trigger the function after it, running the code block in the function, saying hello to the world!
         </p>
         <p>Another way to think of the DOM is with a tree, with branching points being nodes, or HTML tags. The Document Object Model sees every HTML tag as an object, with nesting tags being treated as the child of the ones they are enclosed by. The contents of these tags, what is between them, is also an object to the DOM.
         </p>
@@ -229,6 +238,7 @@
       </div>
     </div>
   </div>
+  <script src="button.js"></script>
   <div class="animation">
     <div class="shape-row">
       <div class="shape"></div>
