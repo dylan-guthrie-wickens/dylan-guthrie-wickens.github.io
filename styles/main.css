@@ -64,6 +64,17 @@ ul {
   width: 80%;
 }
 
+table {
+  margin: 10px auto;
+  padding: 0px 0px 20px 0px;
+  width: 80%
+}
+
+td, th {
+  border: 2px solid white;
+  padding: 5px;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -90,6 +101,7 @@ pre {
   background-color: #80CCFF;
   overflow: scroll;
 }
+
 .page-image {
   display: flex;
   margin: 0 auto;
