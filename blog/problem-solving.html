@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--meta tags, fonts, stylesheet-->
+<head>
+  <title>Probe Them Problems
+  </title>
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <!--title and nav-->
+  <header class="header">
+    <nav class="navbar">
+      <div class="navigation">
+        <ul class="nav-list">
+          <li class="list-item">
+            <h3><a href="../index.html" class="list-link">Home</a></h3>
+          </li>
+          <li class="list-item">
+            <h3><a href="./tech.html" class="list-link">Tech</a></h3>
+          </li>
+          <li class="list-item">
+            <h3><a href="./core.html" class="list-link">Core</a></h3>
+          </li>
+        </ul>
+      </div>
+  </header>
+  <!--background-->
+  <div class="background">
+  </div>
+  <!--main content-->
+  <section id="page-content">
+  <div class="blog-header">
+    <h3>Probe Them Problems
+    </h3>
+  </div>
+  <div class="blog-sub-header">
+    <span>What if you can't see the solution for the problems?</span>    
+  </div>
+  <!--BOXES-->
+    <div class="box-page">
+      <div class="box-text">
+        <h4>What was a time I was stuck on a simple problem?</h4>
+        <p>
+          Object literals are weird to get your head around. At first, they seem so simple. You have the object itself, which is basically a container. Then you have the properties, which are made of a name and value pair. But! The properties can be objects themselves, or the name value pair could have a function in it. It gets pretty complicated fast.
+        </p>
+        <p>
+          As part of the JavaScript Kata, there was a challenge around object manipulation, and assigning new properties, new values, making functions to do these, etc. Instead of taking my time and reading through carefully, I charged headlong into it, and quickly became stuck. Not to be dissuaded however, I trucked on, modified the objects as requested (I thought), and got to a point where only a couple tests were failing.
+        </p>
+        <p>
+          I managed to work around this by declaring the 'adam' value at the top of the page, and it passed the test! But it didn't feel right, like I had cheated somehow. So I finished most of the other exercises (had similar issues with the 'Gradebook' exercise, and you guessed it, it was objects again), but then on review, realised I had misread the instructions. So I looked through the exercises again, then reread everything I had about objects, looked through some other exercises, and tackled it again, with Google as my trusty companion. This is how I learned that just because the test is being passed, does not mean you are right, and that reviewing your code after a break to see if it still makes sense is very, very important.
+        </p>
+        <p>
+          I managed to work around this by declaring the 'adam' value at the top of the page, and it passed the test! But it didn't feel right, like I had cheated somehow. So I finished most of the other exercises (had similar issues with the 'Gradebook' exercise, and you guessed it, it was objects again), but then on review, realised I had misread the instructions. So I looked through the exercises again, then reread everything I had about objects, looked through some other exercises, and tackled it again, with Google as my trusty companion. This is how I learned that just because the test is being passed, does not mean you are right, and that reviewing your code after a break to see if it still makes sense is very, very important.
+        </p>
+        <h4>What was a time you elegantly solved a problem?
+        </h4>
+        <p>
+          The above example fairly neatly lines up with a problem I think I solved well, which was the stretch question on the 'Gradebook' exercise, involving writing a function to create an empty 'gradebook' object from scratch, a daunting exercise. From extensive Googling and reading documentation, the [ ] square bracket notation is how you pass in a value that is changing, maybe being iterated through as an array (like object[arrayValue[i]] ), and dot notation means you have to hard code the value. With this 'ah-ha' moment in hand (one of the best feeling ones I have had this whole course), I then went through and refactored a lot of code that I could see might be made more succinct this way. From this I learned that it WILL click, and suddenly make sense, as long as you keep going.
+          </p>
+          <h4>How confident I feel about problem solving techniques:</h4>
+          <table>
+            <tr>
+              <th>Technique</th>
+              <th>Rating</th>
+              <th>Reflections</th>
+            </tr>
+            <tr>
+              <td>Pseudocode</td>
+              <td>10 / 10</td>
+              <td>The most useful first step to a hard problem. Write it down, what should it do? What steps would it go through to do this? This also works with real life problems, recommended.</td>
+            </tr>
+            <tr>
+              <td>Trying something.</td>
+              <td>8 / 10</td>
+              <td>Starting SOMEWHERE is starting, and once you start, just try and stop.</td>
+            </tr>
+            <tr>
+              <td>Rubber ducky method</td>
+              <td>10 / 10</td>
+              <td>My favourite way to review code that now is presenting bugs. Explain it to yourself, and if you can't, find out why. What is that sneaky value up to?</td>
+            </tr>
+            <tr>
+              <td>Reading error messages</td>
+              <td>7 / 10</td>
+              <td>The great thing about error messages, is that you can Google them! Give me a bug that results in an error message and not 'undefined' any day.</td>
+            </tr>
+            <tr>
+              <td>console.log</td>
+              <td>10 / 10</td>
+              <td>How are you supposed to know what that sneaky value is up to without logging it to console? Have a console.log on every step, do it.</td>
+            </tr>
+            <tr>
+              <td>Googling</td>
+              <td>8 / 10</td>
+              <td>Someone else has solved your problem already, you just have to find where they posted about it.</td>
+            </tr>
+            <tr>
+              <td>Asking your peers for help</td>
+              <td>8 / 10</td>
+              <td>I have fortunately not gotten stuck enough yet that the above processes didn't work, but I'm sure I will. When I do, I will happily ask people to help.</td>
+            </tr>
+            <tr>
+              <td>Asking coaches for help</td>
+              <td>8 / 10</td>
+              <td>See above.</td>
+            </tr>
+            <tr>
+              <td>Improving your process with reflection</td>
+              <td>7 / 10</td>
+              <td>I have been going through old code I have written to see if I can explain how it works hours, days, weeks later, to try and cram it in my brain permanently, and I recommend it.</td>
+            </tr>
+          </table>
+            <h4>When were you reluctant to ask for help, and why?
+            </h4>
+            <p>In my last job, the 'culture' was pretty awful. I had a lot of responsibilities, and probably took on too much. I severely disliked the idea of failure, and what that meant about me. Still though, I did ask for help when I needed it, when I had to. Being seen as weak by my boss was the main reason, he very hard to work for. It is why I quit, and resolved to never put myself in a position like that again.
+            </p>
+
+        <p>
+          20 April 2023
+        </p>
+      </div>
+    </div>
+  <div class="box-grid-2">
+    <div class="box-small">
+      
+      <div class="box-text">
+        <h4><br><br>Future content will go here</h4>
+      </div>
+    </div>
+    <div class="box-small">
+      
+      <div class="box-text">
+        <h4><br><br>Future content will go here</h4>
+      </div>
+    </div>
+    <div class="box-small">
+      
+      <div class="box-text">
+        <h4><br><br>Future content will go here</h4>
+      </div>
+    </div>
+  </div>
+  <div class="animation">
+    <div class="shape-row">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+  </div>
+</body>
+</html>
+</html>
